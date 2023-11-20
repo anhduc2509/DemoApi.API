@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4fc7307e-f7a4-45a9-8488-582c3b2f36cd</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoApi.Application\DemoApi.Application.csproj" />
+    <ProjectReference Include="..\DemoApi.Contract\DemoApi.Contracts.csproj" />
+    <ProjectReference Include="..\DemoApi.Domain\DemoApi.Domain.csproj" />
+    <ProjectReference Include="..\DemoApi.Infracstructure\DemoApi.Infracstructure.csproj" />
+  </ItemGroup>
+
+</Project>
